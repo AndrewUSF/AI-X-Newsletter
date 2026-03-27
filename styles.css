@@ -75,7 +75,7 @@ a:hover {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("./assets/images/wavy-lines-usfgreen.svg");
+  background-image: url("./assets/general/wavy-lines-usfgreen.svg");
   background-size: 1180px;
   background-position: right -120px top -140px;
   background-repeat: no-repeat;
