@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Claude Code Deletes Servers, Databases, and Backups During System Update - AI+X Newsletter</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="./script.js" defer></script>
+</head>
+<body>
+  <main class="page">
+    <div class="container">
+      <div class="card">
+        <header class="header">
+          <div class="brand-row">
+            <img class="brand-logo" src="./assets/general/usf-logo.svg" alt="University of South Florida logo" />
+            <div>
+              <p class="brand-label">University of South Florida</p>
+            </div>
+          </div>
+
+          <h1>AI+X Newsletter</h1>
+
+          <div class="meta-row">
+            <a class="badge badge-link" href="./march-2026.html">Back to Issue</a>
+          </div>
+        </header>
+
+        <div class="post-content reveal">
+          <div class="post-header">
+            <h2 class="post-title">Claude Code Deletes Servers, Databases, and Backups During System Update</h2>
+          </div>
+          <p class="post-meta">Category: Engineering / Infrastructure</p>
+
+          <img class="post-hero" src="./assets/images/2026/0307.png" alt="Illustration of an eraser wiping away servers, storage, and data" />
+          <p class="image-source">Image Source: AI+X Newsletter illustration</p>
+
+          <p>
+            Developer Alexey Grigorev was using Claude Code to assist in migrating parts of a cloud environment managed through Terraform on AWS. During the process, a key configuration file was missing, leaving the system with an incomplete picture of the existing infrastructure. Claude generated a plan that Terraform then executed to reconcile the environment, bringing the declared configuration into alignment with what it understood to be the current state.
+          </p>
+
+          <p>
+            In doing so, the system treated significant portions of the live environment as unnecessary. As a result, it deleted core infrastructure components, including servers, databases, associated storage, and backups managed within the same scope. Within a few minutes, the automated action removed approximately 2.5 years of operational data. The data was ultimately recovered with assistance from AWS support, but the incident has since been widely cited as a cautionary example of the risks associated with granting AI-generated plans direct control over production systems.
+          </p>
+
+          <a class="source-button" href="https://medium.com/@PlanB./when-claude-deletes-your-infrastructure-the-real-risk-of-ai-agents-and-why-kubernetes-backups-9de9c76cd83d" target="_blank" rel="noopener noreferrer">Source (Medium) &rarr;</a>
+        </div>
+
+        <footer class="footer reveal">
+          <p><strong>If you have questions or would like to contribute to future editions:</strong></p>
+          <p><strong>Karni Chagal-Feferkorn</strong> - <a href="mailto:karnif@usf.edu">karnif@usf.edu</a></p>
+          <p><strong>Andrew Musa</strong> - <a href="mailto:andrewmusa@usf.edu">andrewmusa@usf.edu</a></p>
+          <p class="copyright"><strong>Copyright &copy; <span data-copyright-year>2026</span> AI+X Newsletter. All rights reserved.</strong></p>
+        </footer>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
